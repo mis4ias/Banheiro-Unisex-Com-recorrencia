@@ -43,7 +43,7 @@ public class Banheiro {
             this.filaHomem.remove(0);
             h.start();
             this.ocupacao++;
-            System.out.println("Uma pessoa saiu do banheiro Genero: "+h.getGenero());
+            System.out.println("Uma pessoa entrou no banheiro Genero: "+h.getGenero());
         }
         if(this.capacidade > this.ocupacao && this.generoAtual == 'F'){
             if(this.filaMulher.size()==0){
@@ -53,7 +53,7 @@ public class Banheiro {
             this.filaMulher.remove(0);
             h.start();
             this.ocupacao++;
-            System.out.println("Uma pessoa saiu do banheiro Genero: "+h.getGenero());
+            System.out.println("Uma pessoa entrou no banheiro Genero: "+h.getGenero());
         }
     }
     public void addHumano(Humano h){
