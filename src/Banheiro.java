@@ -20,8 +20,8 @@ public class Banheiro {
         this.filaHomem=new ArrayList<Humano>(100);
         this.filaMulher=new ArrayList<Humano>(100);
 
-        this.proximoHumano=new BanheiroThread(this,1);
-        this.trocarGenero= new BanheiroThread(this,2);
+        this.proximoHumano=new BanheiroThread(this,true);
+        this.trocarGenero= new BanheiroThread(this,false);
 
         this.proximoHumano.start();
         this.trocarGenero.start();
@@ -47,6 +47,7 @@ public class Banheiro {
             this.ocupacao++;
             System.out.println("Uma pessoa entrou no banheiro Genero: "+h.getGenero());
             System.out.println("Ocupacação atual: " + this.ocupacao);
+            System.out.println("Genero Atual: "+this.generoAtual);
    
         }
         if(this.capacidade > this.ocupacao && this.generoAtual == 'F'  ){
@@ -60,6 +61,7 @@ public class Banheiro {
             this.ocupacao++;
             System.out.println("Uma pessoa entrou no banheiro Genero: "+h.getGenero());
             System.out.println("Ocupacação atual: " + this.ocupacao);
+            System.out.println("Genero Atual: "+this.generoAtual);
         }
         //System.out.println("Ocupacação atual: " + this.ocupacao);
     }

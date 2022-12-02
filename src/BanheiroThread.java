@@ -1,20 +1,20 @@
 import java.lang.Thread;
 public class BanheiroThread extends Thread {
     Banheiro banheiro;
-    int tipo;
+    Boolean tipo;
 
 
-    BanheiroThread(Banheiro banheiro, int tipo){
+    BanheiroThread(Banheiro banheiro, boolean tipo){
         this.banheiro = banheiro;
         this.tipo=tipo;
     }
     @Override
     public void run(){
-        if(tipo==1){
+        if(tipo==true){
             while(true){
                 this.banheiro.proximaPessoa();
             }
-        }else if(tipo==2){
+        }else if(tipo==false){
             while(true){
                 try{
                     Thread.sleep(5000);

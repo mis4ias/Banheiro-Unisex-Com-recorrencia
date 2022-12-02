@@ -7,9 +7,10 @@ public class Main {
         System.out.println("Digite a capacidade do banheiro");
         banheiroCapacidade=s.nextInt();
 
-        Banheiro b = new Banheiro(banheiroCapacidade,'F');
-        Monitor m =new Monitor(b);
-        m.start();
+
+        Banheiro banheiro = new Banheiro(banheiroCapacidade,'F');
+        Monitor monitor =new Monitor(banheiro);
+        monitor.start();
 
         while(true){
             continue;

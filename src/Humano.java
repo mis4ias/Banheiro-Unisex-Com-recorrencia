@@ -12,7 +12,7 @@ public class Humano extends Thread {
     public void setGenero(char genero) {
         this.genero = genero;
     }
-    public Humano(Monitor monitor, char g, int i){
+    public Humano(char g, int i,Monitor monitor){
         this.monitor=monitor;
         this.genero=g;
         this.tempoMaximo=i;
