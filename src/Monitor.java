@@ -12,9 +12,9 @@ public class Monitor extends Thread{
         int intAleatorio = geradorAleatorio.nextInt(10);
 
         if (intAleatorio<5){
-            h = new Humano(this,'M',1000);
+            h = new Humano(this,'M',100);
         }else {
-            h= new Humano(this,'F',1000);
+            h= new Humano(this,'F',100);
         }
 
         this.banheiro.addHumano(h);
@@ -23,12 +23,13 @@ public class Monitor extends Thread{
     public synchronized void humanoOut() {
         this.banheiro.trocarOcupacao(-1);
         System.out.println("Uma pessoa saiu do banheiro, Genero: "+this.banheiro.getGeneroAtual());
+        System.out.println("Ocupacação atual: " + this.banheiro.getOcupacao());
     }
     @Override
     public void run(){
         while(true){
             Random geradorAleatorio = new Random();
-            int intAleatorio = geradorAleatorio.nextInt(5000);
+            int intAleatorio = geradorAleatorio.nextInt(2000);
             try{
                 Thread.sleep(intAleatorio);
                 this.criarHumano();
