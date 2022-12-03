@@ -1,12 +1,12 @@
 # Banheiro-Unisex-Com-recorrencia
 
-#Trabalho Prático: Mecanismos de Sincronização
+# Trabalho Prático: Mecanismos de Sincronização
 
 Marlus Marcos; Misael Damasceno.
 
 LINK REPO: https://github.com/mis4ias/Banheiro-Unisex-Com-recorrencia
 
-#1 O problema
+# 1 O problema
 
 O problema consiste em administrar a entrada, saída e utilização de um banheiro
 unisex de um determinado escritório. As regras de uso consistem em que quando um
@@ -18,7 +18,7 @@ utilização do banheiro e do tempo que o banheiro permanecerá para determinado
 gênero, evitando que algum gênero fique sem entrar no banheiro e assim fazendo
 justiça aos usuários do ambiente.
 
-#2 Solução
+# 2 Solução
 
 Para construir a solução foi necessário analisar o que precisava de atenção no
 funcionamento da aplicação, verificamos que como foi descrito no problema, seria
@@ -39,7 +39,7 @@ Desta Forma, com a utilização do Monitor conseguimos garantir o fluxo correto 
 banheiro, permitindo a entrada e saída, como também a utilização mais justa para
 ambos os gêneros.
 
-#3 Conclusões
+# 3 Conclusões
 
 A problemática maior que tivemos foi no controle da entrada, saída de pessoas e
 impressão na saída do terminal. Precisamos pensar um pouco fora da caixa para
